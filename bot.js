@@ -1,15 +1,15 @@
-const  Discord  =  gerektirir ( ' discord.js ' );
-const  client  =  yeni  Discord.Client ();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-istemci . on ( ' hazır ' , () => {
-    Konsol . log ( ' Hazırım! ' );
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
-istemci . on ( ' message ' , mesaj  => {on
-    eğer ( mesaj . content  ===  ' ping ' ) {
-    	mesajı . cevap ( ' pong ' );
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
   	}
 });
 
-// BU ŞEKİLDE OLMALIDIR
-istemci . giriş ( süreç . env .NDM4MzE3MDQ5ODkxMTI3Mjk3.DcO2dw.pZ2S5HkJsTOjn3L4Wt4ADTZSndY);
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
