@@ -1,12 +1,12 @@
 {
-  "name": "DEMİR ™ BOT,
+  "name": "DEMİR™BOT,
   "version": "0.0.1",
   "description": "",
   "main": "bot.js",
   "scripts": {
     "test": "node bot.js"
   },
-  "author": "Tarık Can",
+  "author": "TarıkCan",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.3.0",
